@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    font-family: 'Poppins', sans-serif !important;
+    background: linear-gradient(to bottom, #78a5a5fe, rgba(80, 87, 226, 0.76));
+    background-color: rgb(128, 126, 128);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.esp {
+    margin-bottom: 100px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 10px;
+}
+
+nav ul {
+    background-color: rgba(0, 0, 0, 0.539);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+dl, ol, ul {
+    margin-bottom: 0 !important;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(181, 178, 178);
+    padding: 7px;
+    border-radius: 30px;
+    transition: ease-out .9s;
+}
+
+main {
+    min-height: calc(100dvh - 70px);
+}
+
+h2 {
+    color: black;
+    font-size: 50px;
+}
+
+figure img {
+    width: 90%;
+    transition: .5s ease;
+}
+
+figure img:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.dif {
+    border: 1px rgb(48, 48, 48) solid;
+    background-color: rgba(44, 42, 42, 0.463);
+}
+
+.cont {
+    background-color: white;
+    color: black;
+}
+
+.efeito:hover {
+    border: 1px rgb(48, 48, 48) solid;
+    background-color: rgba(44, 42, 42, 0.463);
+}
+
+.button{
+    width: 100%;
+    display: flex;
+}
+
+.books {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.flex-main {
+    display: flex !important;
+    color: white;
+    align-items: center;
+}
+
+.flex-main h1 {
+    font-size: 60px;
+    font-weight: bolder;
+    color: rgb(0, 0, 0);
+}
+
+.flex {
+    display: flex !important;
+    color: white;
+    align-items: center;
+}
+
+.sm {
+    display: none;
+}
+
+.bet {
+    justify-content: space-between;
+}
+
+.sec2 {
+    background-image: url(/assets/img/poster/banner.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sec1 {
+    background-attachment: fixed;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.rev {
+    flex-direction: row-reverse;
+    padding: 0;
+    margin-bottom: 101px;
+    margin-top: 70px;
+}
+
+.center {
+    text-align: center;
+}
+
+.btn-index {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: .5s ease-in;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-index:hover {
+    background-color: white;
+    color: black;
+    transform: scale(0.9);
+}
+
+.limg {
+    width: 100%;
+}
+
+#click {
+    display: none;
+}
+
+.container-w {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    font-size: 15px;
+}
+
+.welcome {
+    color: white;
+    display: flex;
+    flex: 1;
+}
+
+input:focus {
+    outline: none;
+}
+
+.welcome-left {
+    background: linear-gradient(to bottom, #78a5a5fe, rgba(80, 87, 226, 0.76));
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome-right {
+    background-color: white;
+    flex: 1;
+    padding: 20px;
+}
+
+.text-form {
+    padding: 10px;
+}
+
+.text-form h1 {
+    color: #4f8fb9;
+    text-align: center;
+}
+
+.text-form p {
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    color: #000;
+}
+
+.form {
+    margin-top: 20px;
+}
+
+input {
+    background-color: rgb(255, 255, 255);
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 10px;
+    border-bottom: solid rgb(196, 195, 195) 0.1px;
+}
+
+.input-container input {
+    padding-left: 30px;
+    width: 100%;
+    height: 34px;
+    border: none;
+}
+
+.input-container .icon {
+    position: absolute;
+    font-size: 12px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #c6c4c4;
+}
+
+.btn-c {
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+
+#btn {
+    padding: 9px;
+    background: linear-gradient(to bottom, #78a5a5fe, rgba(80, 87, 226, 0.76));
+    color: white;
+    border-radius: 50px;
+    border: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+#btn:hover {
+    background-color: rgb(0, 35, 173);
+}
+
+.form-tudo {
+    display: grid;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.login-w {
+    transition: .3s ease-in;
+}
+
+.login-w:hover {
+    background-color: white;
+    color: black !important;
+    border: solid white !important;
+}
+.flex-cl{
+    flex-direction: row-reverse;
+    
+}
+.img-ab{
+    width: 100%;
+}
+.welcome .login-w {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border: solid;
+    padding-left: 50px;
+    border-radius: 50px;
+    border: solid 1.5px;
+    padding-right: 50px;
+}
+
+.welcome .btn {
+    padding: 10px;
+    padding-top: 25px;
+}
+
+.p-w {
+    text-align: center;
+}
+
+.a-esq {
+    display: flex;
+    justify-content: center;
+    font-size: 90%;
+    color: #4f8fb9;
+}
+
+.vt {
+    color: black;
+}
+
+.cadastrar-b:hover {
+    color: black;
+    border: solid white;
+}
+
+.logo-c {
+    width: 160px;
+    filter: brightness(0) saturate(100%) invert(60%) sepia(100%) saturate(340%) hue-rotate(900deg) brightness(95%);
+}
+
+.main-flex {
+    gap: 30px;
+}
+
+.esqueceu {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* cadastroLivros---- */
+.container-livros {
+    padding: 20px;
+}
+
+.h2-livros{
+    font-size: 44px;
+}
+
+.lista-livros {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.card-livro {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+    width: 150px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.card-livro:hover {
+    transform: scale(1.05);
+}
+
+.livro-img img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.preco-livro {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.comprar button {
+    background-color: #067cf9;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.comprar button:hover {
+    background-color: #0056b3;
+}
+
+/* cadastrolivros---- */
+.book-registration {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.registration-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.registration-container {
+    padding: 20px;
+}
+
+.book-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.input-field,
+.input-textarea {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    transition: border 0.2s;
+}
+
+.input-field:focus,
+.input-textarea:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+.input-textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+/* eventos--- */
+.container-eventos {
+    padding: 20px;
+}
+
+.lista-eventos {
+    list-style-type: none;
+    padding: 0;
+}
+
+.card-evento {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5); 
+    border-radius: 10px;
+    margin: 15px 0;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+
+.card-evento:hover {
+    transform: scale(1.02); 
+}
+
+.card-evento h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.card-evento p {
+    margin: 5px 0;
+}
+
+.card-evento iframe {
+    width: 100%;
+    max-width: 560px; 
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .welcome {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sm {
+        display: block;
+    }
+
+    .sumir {
+        display: none;
+    }
+
+    .bet {
+        flex-direction: column;
+    }
+
+    .img-logo {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .flex-main {
+        text-align: justify;
+        flex-direction: column;
+    }
+
+    .main-image {
+        display: auto;
+    }
+
+    .button {
+        justify-content: center;
+    }
+
+    .p-title {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .flex-main {
+        font-size: clamp(12px, 5vw, 16px);
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .flex {
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+        text-align: justify;
+    }
+    nav ul{
+        text-align: center;
+    }
+    .about-us {
+        text-align: center;
+    }
+
+    h2, p, ul {
+        text-align: center;
+    }
+
+    ul {
+        text-align: justify;
+    }
+
+    .sec-1 {
+        flex-direction: column;
+        text-align: center;
+    }
+}
