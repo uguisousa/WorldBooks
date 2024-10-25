@@ -81,35 +81,72 @@
     </script>
   </head>
   <body>
-        <main>
-    <section class="book-registration">
-        <div class="registration-container">
-            <h2 class="registration-title">Cadastro de Livros</h2>
-            <form class="book-form">
-                <div class="input-group">
-                    <label for="title" class="input-label">Título</label>
-                    <input type="text" id="title" name="title" class="input-field" required>
+        <main class="main-livros">
+            <section class="book-registration">
+                <div class="registration-container">
+                    <h2 class="registration-title">Cadastro de Livros</h2>
+                    <form class="book-form">
+                        <div class="input-group">
+                            <label for="title" class="input-label">Título</label>
+                            <input type="text" id="title" name="title" class="input-field" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="author" class="input-label">Autor</label>
+                            <input type="text" id="author" name="author" class="input-field" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="genre" class="input-label">Gênero</label>
+                            <input type="text" id="genre" name="genre" class="input-field" required>
+                        </div>
+                       
+                        <div class="input-group">
+                            <label for="description" class="input-label">Descrição</label>
+                            <textarea id="description" name="description" class="input-textarea" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button btn-edit">Cadastrar</button>
+                    </form>
+            
+                    <table class="table">
+                        <thead>
+                            <tr class="text-center">
+                                <th scope="col">Excluir</th>
+                                <th scope="col">Editar</th>
+                                <th scope="col">Título</th>
+                                <th scope="col">Autor</th>
+                                <th scope="col">Gênero</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-group-divider " id="corpo_tabela">
+                            <tr class="text-center">
+                                <td><img src="/assets/img/delete.png" width="30"  onClick="excluir('${title}', '${author}', '${genre}')"/></td>
+                                <td><img src="/assets/img/edit.png" width="30" onClick="editar('${title}', '${author}', '${genre}')"/></td>
+                                <td>gui</td>
+                                <td>gui</td>
+                                <td>gui</td>
+                            </tr>             
+                            <tr class="text-center">
+                                <td><img src="/assets/img/delete.png" width="30"  onClick="excluir('${title}', '${author}', '${genre}')"/></td>
+                                <td><img src="/assets/img/edit.png" width="30" onClick="editar('${title}', '${author}', '${genre}')"/></td>
+                                <td>gui</td>
+                                <td>gui</td>
+                                <td>gui</td>
+                            </tr>             
+                            <tr class="text-center">
+                                <td><img  src="/assets/img/delete.png" width="30"  onClick="excluir('${title}', '${author}', '${genre}')"/></td>
+                                <td ><img src="/assets/img/edit.png" width="30" onClick="editar('${title}', '${author}', '${genre}')"/></td>
+                                <td>gui</td>
+                                <td>gui</td>
+                                <td>gui</td>
+                            </tr>             
+
+                        </tbody>
+                    </table>
                 </div>
-                <div class="input-group">
-                    <label for="author" class="input-label">Autor</label>
-                    <input type="text" id="author" name="author" class="input-field" required>
-                </div>
-                <div class="input-group">
-                    <label for="genre" class="input-label">Gênero</label>
-                    <input type="text" id="genre" name="genre" class="input-field" required>
-                </div>
-                <div class="input-group">
-                    <label for="isbn" class="input-label">ISBN</label>
-                    <input type="text" id="isbn" name="isbn" class="input-field" required>
-                </div>
-                <div class="input-group">
-                    <label for="description" class="input-label">Descrição</label>
-                    <textarea id="description" name="description" class="input-textarea" required></textarea>
-                </div>
-                <button type="submit" class="submit-button">Cadastrar Livro</button>
-            </form>
-        </div>
-    </section>
+                <div class="text-home">
+                <a class="text-a" href="/index.html" target="_blank">Inicio</a>
+                    </div>
+            </section>
+            
 </main> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
